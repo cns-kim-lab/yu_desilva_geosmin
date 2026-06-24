@@ -38,12 +38,62 @@ def create_scalebar_at_wanted_pos(pos,spec):
     actor.SetProperty(cube_color)
     return actor
 
-def make_mesh_actor(mesh,color_rgb,opacity=1):
-    mesh_actor_each_cell = trimesh_vtk.mesh_actor(mesh,color=color_rgb,opacity=opacity)
-    return mesh_actor_each_cell 
 
 
-def make_projection_image(save_path,actors_list,center,scalebar=False,projection_view='xy',do_save=True):
+
+def make_group_mesh_actors(
+    meshes,
+    g2c,
+    g2color,
+    neuropil=None,
+    cell_opacity=1,
+    neuropil_color=(0.9, 0.9, 0.9),
+    neuropil_opacity=0.1,
+):
+    mesh_ids = [x.id for x in meshes]
+
+    mesh_actors_dict = {}
+
+    for g in g2c.keys():
+
+        for c in g2c[g]:
+            if c not in mesh_ids:
+                print(f'Warning: {c} not found in meshes')
+                continue
+            color = g2color[g][0]
+
+            if isinstance(color, str):
+                color = np.array(hex_to_rgb(color)) / 255
+            else:
+                color = np.array(color)
+
+                if np.max(color) > 1:
+                    color = color / 255
+
+            temp_mesh_actor = trimesh_vtk.mesh_actor(
+                    meshes[mesh_ids.index(c)],
+                    color=list(color),
+                    opacity=cell_opacity
+                )
+            mesh_actors_dict[g] = temp_mesh_actor
+            
+
+    if neuropil is not None:
+        neuropil = trimesh_vtk.mesh_actor(
+                neuropil,
+                color=neuropil_color,
+                opacity=neuropil_opacity
+            )
+        mesh_actors_dict['neuropil'] = temp_mesh_actor
+
+        
+
+    return mesh_actors_dict
+
+
+
+
+def make_projection_image(save_path,actors_list,center,scalebar=False,projection_view='xy',backoff=700,parallelsacle=70000,do_save=True):
 
     if projection_view == 'xy':
         backoff_vector=[0,0,1]
@@ -56,11 +106,11 @@ def make_projection_image(save_path,actors_list,center,scalebar=False,projection
         up_vector = [0,0,-1]
 
     camera = trimesh_vtk.oriented_camera(center=center ,      # focus point
-        backoff=700,
+        backoff=backoff,
         backoff_vector=backoff_vector,
         up_vector = up_vector)  
     camera.ParallelProjectionOn()
-    camera.SetParallelScale(70000)
+    camera.SetParallelScale(parallelsacle)
     if do_save:
         trimesh_vtk.render_actors(actors_list,camera=camera,do_save=do_save,filename=f'{save_path}.png')
     else:
