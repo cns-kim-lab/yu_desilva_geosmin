@@ -50,46 +50,45 @@ def make_group_mesh_actors(
     neuropil_color=(0.9, 0.9, 0.9),
     neuropil_opacity=0.1,
 ):
-    mesh_ids = [x.id for x in meshes]
-
+    mesh_lookup = {mesh.id: mesh for mesh in meshes}
     mesh_actors_dict = {}
 
-    for g in g2c.keys():
-
-        for c in g2c[g]:
-            if c not in mesh_ids:
-                print(f'Warning: {c} not found in meshes')
-                continue
-            color = g2color[g][0]
-
-            if isinstance(color, str):
-                color = np.array(hex_to_rgb(color)) / 255
-            else:
-                color = np.array(color)
-
-                if np.max(color) > 1:
-                    color = color / 255
-
-            temp_mesh_actor = trimesh_vtk.mesh_actor(
-                    meshes[mesh_ids.index(c)],
-                    color=list(color),
-                    opacity=cell_opacity
-                )
-            mesh_actors_dict[g] = temp_mesh_actor
-            
-
-    if neuropil is not None:
-        neuropil = trimesh_vtk.mesh_actor(
-                neuropil,
-                color=neuropil_color,
-                opacity=neuropil_opacity
-            )
-        mesh_actors_dict['neuropil'] = temp_mesh_actor
-
+    for group, cell_ids in g2c.items():
         
 
-    return mesh_actors_dict
+        color = g2color[group]
 
+        if isinstance(color, str):
+            color = np.array(hex_to_rgb(color), dtype=float) / 255
+        else:
+            color = np.asarray(color, dtype=float)
+
+            if np.max(color) > 1:
+                color = color / 255
+        temp = []
+        for cell_id in cell_ids:
+            if cell_id not in mesh_lookup:
+                print(f'Warning: {cell_id} not found in meshes')
+                continue
+
+            actor = trimesh_vtk.mesh_actor(
+                mesh_lookup[cell_id],
+                color=color.tolist(),
+                opacity=cell_opacity
+            )
+
+            temp.append(actor)
+        mesh_actors_dict[group] = temp
+
+    if neuropil is not None:
+        neuropil_actor = trimesh_vtk.mesh_actor(
+            neuropil,
+            color=neuropil_color,
+            opacity=neuropil_opacity
+        )
+        mesh_actors_dict['neuropil'] = [neuropil_actor]
+
+    return mesh_actors_dict
 
 
 
