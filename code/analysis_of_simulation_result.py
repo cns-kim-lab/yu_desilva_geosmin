@@ -1,4 +1,7 @@
 from multiprocessing import Pool
+import re
+from pathlib import Path
+import sys
 from tqdm import tqdm
 import pickle 
 import os 
@@ -124,3 +127,117 @@ def make_df(raw_data,group_id,exp_name):
     df_rate = df.pivot_table(columns='exp_name', index='group_id', values='r')
     df_std = df.pivot_table(columns='exp_name', index='group_id', values='std')
     return df_rate,df_std
+
+
+def load_mn9_results(
+    result_dir,
+    target_neuron,
+    target_name="MN9",
+    n_simulations=100,
+):
+    """
+    Load MN9 simulation results from each group directory.
+
+    Expected directory structure
+    ----------------------------
+    result_dir/
+        group_1/
+            *.parquet
+        group_2/
+            *.parquet
+
+    Returns
+    -------
+    mean_df : pandas.DataFrame
+        Mean MN9 firing rates. Rows correspond to groups.
+    sem_df : pandas.DataFrame
+        SEM of MN9 firing rates. Rows correspond to groups.
+    """
+    result_dir = Path(result_dir)
+
+    group_dirs = sorted(
+        directory
+        for directory in result_dir.iterdir()
+        if directory.is_dir() and not directory.name.startswith(".")
+    )
+
+    mean_by_group = {}
+    sem_by_group = {}
+
+    for group_dir in group_dirs:
+        parquet_files = sorted(group_dir.glob("*.parquet"))
+
+        if not parquet_files:
+            continue
+
+        rate, _, std = read_result_with_multi_thread(
+            [str(file) for file in parquet_files],
+            target_neuron,
+            target_name,
+        )
+
+        mean_by_group[group_dir.name] = pd.concat(rate, axis=1)
+        sem_by_group[group_dir.name] = (
+            pd.concat(std, axis=1) / np.sqrt(n_simulations)
+        )
+
+    if not mean_by_group:
+        raise FileNotFoundError(
+            f"No parquet result files were found in: {result_dir}"
+        )
+
+    mean_df = pd.concat(mean_by_group, names=["group"])
+    sem_df = pd.concat(sem_by_group, names=["group"])
+
+    # Each group is expected to contain one target-neuron row.
+    mean_df = mean_df.droplevel(-1)
+    sem_df = sem_df.droplevel(-1)
+
+    return mean_df, sem_df
+
+def make_frequency_grid(
+    df,
+    sweet_frequencies,
+    geosmin_frequencies,
+):
+    """
+    Reshape columns such as '20Hz_100Hz' into a frequency grid.
+
+    Rows correspond to geosmin stimulation frequencies.
+    Columns correspond to sweet stimulation frequencies.
+
+    A separate grid is produced for each original row, using a MultiIndex.
+    """
+    grids = []
+
+    for group_name, row in df.iterrows():
+        group_grid = pd.DataFrame(
+            {
+                f"{sweet_freq}Hz": [
+                    row[f"{sweet_freq}Hz_{geosmin_freq}Hz"]
+                    for geosmin_freq in geosmin_frequencies
+                ]
+                for sweet_freq in sweet_frequencies
+            },
+            index=[f"{freq}Hz" for freq in geosmin_frequencies],
+        )
+
+        group_grid.index.name = "geosmin_frequency"
+        group_grid["group"] = group_name
+        grids.append(group_grid.reset_index())
+
+    frequency_grid = pd.concat(grids, ignore_index=True)
+
+    frequency_grid = frequency_grid.set_index(
+        ["group", "geosmin_frequency"]
+    )
+
+    return frequency_grid
+
+
+def frequency_sort_key(column_name):
+    """Extract frequency values from names such as '20Hz' or '20Hz_100Hz'."""
+    return tuple(
+        int(value)
+        for value in re.findall(r"(\d+)Hz", str(column_name))
+    )
