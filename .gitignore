@@ -1,4 +1,14 @@
 # Simulation outputs
 /figure4/figure4B-C.Each_type_stimulation/simulation/labial_result/
 /figure4/figure4B-C.Each_type_stimulation/simulation/tarsal_result/
-figure4/figure4A.3D_rendering_of_each_type/neurons.pkl
+/figure4/figure4B-C.Each_type_stimulation/plotting/figures/
+/figure4/figure4D-E.Each_modality_stimulation/simulation/labial_result/
+/figure4/figure4D-E.Each_modality_stimulation/simulation/tarsal_result/
+/figure4/figure4D-E.Each_modality_stimulation/plotting/figures/
+/figure4/figure4A.3D_rendering_of_each_type/neurons.pkl
+/data/
+# Python cache
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.~lock.*
