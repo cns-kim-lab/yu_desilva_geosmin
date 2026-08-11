@@ -14,11 +14,15 @@ import seaborn as sns
 from color_utils import rgb_to_hex
 
 
-path_syn = '/volume_4/research/seongbong/flywire/geosmin_project_version_update/data/synapse/v783'
-path_comp = '/volume_4/research/seongbong/flywire/geosmin_project_version_update/data/Completeness_783.csv'
-with open('/volume_4/research/seongbong/flywire/geosmin_project_version_update/data/interneuron_group_info/target_ids_all_v783.pkl','rb') as f:
+import sys 
+import os 
+from pathlib import Path
+REPO_ROOT = Path.cwd().resolve().parents[1]
+path_syn = REPO_ROOT/"data/synapse/v783"
+path_comp = REPO_ROOT/"data/Completeness_783.csv"
+with open(REPO_ROOT/"data/interneuron_group_info/target_ids_all_v783.pkl",'rb') as f:
     target_ids_valid_all = pickle.load(f)
-with open('/volume_4/research/seongbong/flywire/geosmin_project_version_update/data/interneuron_group_info/g_info_all_v783.pkl','rb') as f:
+with open(REPO_ROOT/"data/interneuron_group_info/g_info_all_v783.pkl",'rb') as f:
     g_info_all = pickle.load(f)
 fid2g = dict(zip(list(target_ids_valid_all),list(g_info_all)))
 
