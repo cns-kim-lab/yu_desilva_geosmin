@@ -92,25 +92,89 @@ def make_group_mesh_actors(
 
 
 
-def make_projection_image(save_path,actors_list,center,scalebar=False,projection_view='xy',backoff=700,parallelsacle=70000,do_save=True):
+def make_projection_image(
+    save_path,
+    actors_list,
+    center,
+    scalebar=False,
+    scalebar_um=40,
+    scalebar_thickness=3000,
+    scalebar_offset=(0, 0, 0),
+    projection_view='xy',
+    backoff=700,
+    parallelsacle=70000,
+    do_save=True
+):
 
     if projection_view == 'xy':
-        backoff_vector=[0,0,1]
-        up_vector = [0,-1,0]
-    elif projection_view == 'yz':
-        backoff_vector=[-1,0,0]
-        up_vector = [0,-1,0]
-    elif projection_view == 'xz':
-        backoff_vector = [0,-1,0]
-        up_vector = [0,0,-1]
+        backoff_vector = [0, 0, 1]
+        up_vector = [0, -1, 0]
 
-    camera = trimesh_vtk.oriented_camera(center=center ,      # focus point
+    elif projection_view == 'yz':
+        backoff_vector = [-1, 0, 0]
+        up_vector = [0, -1, 0]
+
+    elif projection_view == 'xz':
+        backoff_vector = [0, -1, 0]
+        up_vector = [0, 0, -1]
+
+    camera = trimesh_vtk.oriented_camera(
+        center=center,
         backoff=backoff,
         backoff_vector=backoff_vector,
-        up_vector = up_vector)  
+        up_vector=up_vector
+    )
+
     camera.ParallelProjectionOn()
     camera.SetParallelScale(parallelsacle)
+
+    actors_to_render = list(actors_list)
+
+    if scalebar:
+        length = scalebar_um * 1000  # um -> nm
+        pos = np.asarray(center) + np.asarray(scalebar_offset)
+
+        if projection_view == 'xy':
+            # screen horizontal = x
+            spec = [
+                length,
+                scalebar_thickness,
+                scalebar_thickness
+            ]
+
+        elif projection_view == 'yz':
+            # screen horizontal = z
+            spec = [
+                scalebar_thickness,
+                scalebar_thickness,
+                length
+            ]
+
+        elif projection_view == 'xz':
+            # screen horizontal = x
+            spec = [
+                length,
+                scalebar_thickness,
+                scalebar_thickness
+            ]
+
+        scalebar_actor = create_scalebar_at_wanted_pos(
+            pos=pos,
+            spec=spec
+        )
+
+        actors_to_render.append(scalebar_actor)
+
     if do_save:
-        trimesh_vtk.render_actors(actors_list,camera=camera,do_save=do_save,filename=f'{save_path}.png')
+        trimesh_vtk.render_actors(
+            actors_to_render,
+            camera=camera,
+            do_save=True,
+            filename=f'{save_path}.png'
+        )
     else:
-        trimesh_vtk.render_actors(actors_list,camera=camera,do_save=do_save)
+        trimesh_vtk.render_actors(
+            actors_to_render,
+            camera=camera,
+            do_save=False
+        )

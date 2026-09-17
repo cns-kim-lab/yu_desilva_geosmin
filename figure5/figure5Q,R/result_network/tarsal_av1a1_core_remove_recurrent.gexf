@@ -1,0 +1,1734 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-08-05">
+    <creator>NetworkX 2.8.8</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="1" title="excit" type="float" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="modality" type="string" />
+    </attributes>
+    <nodes>
+      <node id="2564" label="2564">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="703.603758666843" y="789.480577621043" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="4476" label="4476">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="707.799488804103" y="664.707660457946" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="603" label="603">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="769.366005993096" y="882.917536030538" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="6930" label="6930">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="459.285347434948" y="890.185035933011" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="7394" label="7394">
+        <viz:color r="255" g="127" b="178" a="1.0" />
+        <viz:position x="549.006095432402" y="794.501094527766" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="760" label="760">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="675.39400724591" y="906.565984118063" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="8410" label="8410">
+        <viz:color r="255" g="127" b="178" a="1.0" />
+        <viz:position x="623.089938551478" y="765.516081759513" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="8734" label="8734">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="569.379302160076" y="894.266852962941" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="8805" label="8805">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="540.779069668438" y="676.204868169054" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="8898" label="8898">
+        <viz:color r="255" g="127" b="178" a="1.0" />
+        <viz:position x="441.783352373948" y="785.875700988694" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="9393" label="9393">
+        <viz:color r="255" g="127" b="178" a="1.0" />
+        <viz:position x="782.675163881854" y="785.361351575945" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="3" label="3">
+        <viz:color r="127" g="178" b="255" a="1.0" />
+        <viz:position x="614.140220822314" y="399.862284525656" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="3147" label="3147">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="540.667760345441" y="555.080945843448" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="535" label="535">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="855.756648865338" y="369.81392494924" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="5523" label="5523">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="851.940854193112" y="133.245051687415" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="6114" label="6114">
+        <viz:color r="127" g="178" b="255" a="1.0" />
+        <viz:position x="364.424525712476" y="170.384219367298" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="6477" label="6477">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="799.595382430797" y="634.090908422882" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="7922" label="7922">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="748.065950010732" y="565.842839424632" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="8445" label="8445">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="704.811226151749" y="166.119154871319" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="8586" label="8586">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="707.758846386505" y="348.859001525206" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="9036" label="9036">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="698.630196900536" y="457.143121836444" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="MN9" label="MN9">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="1000.0" y="157.999539643233" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="bract" label="bract">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="711.59602717793" y="63.439034991253" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="rounddown" label="rounddown">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="850.003046466739" y="13.1062723045169" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="roundup" label="roundup">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="853.651172617731" y="239.281608233997" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="sink and sync" label="sink and sync">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="399.114766296485" y="431.761377875148" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="5467" label="5467">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="390.062473005955" y="272.789623058842" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="7014" label="7014">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="150.21527201121" y="481.380082216885" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="7272" label="7272">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="564.024653354083" y="319.818638385965" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="8689" label="8689">
+        <viz:color r="127" g="178" b="255" a="1.0" />
+        <viz:position x="712.066151450879" y="287.277335421769" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="FDG" label="FDG">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="562.125589537015" y="201.939617129596" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="horntail" label="horntail">
+        <viz:color r="255" g="127" b="178" a="1.0" />
+        <viz:position x="448.343784634995" y="592.981105255534" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="676" label="676">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="435.56274623902" y="660.066676031199" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="7103" label="7103">
+        <viz:color r="255" g="0" b="102" a="1.0" />
+        <viz:position x="622.76122477784" y="643.509145536363" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="5342" label="5342">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="205.616724252715" y="377.260000579362" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="6286" label="6286">
+        <viz:color r="0" g="102" b="255" a="1.0" />
+        <viz:position x="267.265363615701" y="272.909003201701" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="TPN1" label="TPN1">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="55.3160012872896" y="435.516705191769" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="av1a1" label="av1a1">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="614.563386162881" y="977.613020063971" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="atGRN" label="atGRN">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="55.3160012872896" y="275.229495117549" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="tarsal" />
+        </attvalues>
+      </node>
+      <node id="DA2_PN" label="DA2_PN">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="459.285347434948" y="977.613020063971" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="Or56a" label="Or56a">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="297.213841255458" y="977.613020063971" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="geosmin" />
+        </attvalues>
+      </node>
+      <node id="17" label="17">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="150.812346322768" y="380.719887302284" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="2158" label="2158">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="595.170371473318" y="64.3327359887449" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="2301" label="2301">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="297.158548214586" y="36.13134113802" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="2712" label="2712">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="513.988403629532" y="17.7823045876018" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="4973" label="4973">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="462.149581070484" y="360.674672318709" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="758" label="758">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="150.236886948977" y="253.630781625723" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="L3" label="L3">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="56.2836107980238" y="310.991275319281" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="8781" label="8781">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="436.764115428486" y="112.702966292977" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="7072" label="7072">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="617.512833205289" y="528.406728054476" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="L2" label="L2">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="0.0" y="207.147649201747" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="G2N-1" label="G2N-1">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="266.359496462679" y="165.101678690867" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="clavicle" label="clavicle">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="149.277725020792" y="127.062399538673" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+      <node id="L1" label="L1">
+        <viz:color r="125" g="125" b="125" a="1.0" />
+        <viz:position x="57.9601750545103" y="89.479958801296" z="0.0" />
+        <attvalues>
+          <attvalue for="0" value="dummy" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="2564" target="4476" id="0" weight="6.426264754702098">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="2564" target="7394" id="1" weight="7.672425341971495">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="2564" target="760" id="2" weight="8.366322214245816">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="2564" target="8410" id="3" weight="3.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="2564" target="8734" id="4" weight="5.906890595608519">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="2564" target="8805" id="5" weight="7.257387842692652">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="4476" target="3147" id="6" weight="6.6865005271832185">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="4476" target="676" id="7" weight="7.768184324776926">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="4476" target="7103" id="8" weight="6.768184324776926">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="4476" target="horntail" id="9" weight="5.357552004618084">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="603" target="4476" id="10" weight="4.321928094887363">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="603" target="760" id="11" weight="6.491853096329675">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="603" target="8734" id="12" weight="4.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="603" target="9393" id="13" weight="4.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6930" target="3147" id="14" weight="6.426264754702098">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6930" target="676" id="15" weight="5.357552004618084">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6930" target="7103" id="16" weight="5.357552004618084">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6930" target="8734" id="17" weight="3.584962500721156">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7394" target="7394" id="18" weight="5.087462841250339">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7394" target="760" id="19" weight="4.459431618637297">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7394" target="8734" id="20" weight="2.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7394" target="8805" id="21" weight="6.426264754702098">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7394" target="8898" id="22" weight="7.693486957499325">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7394" target="9393" id="23" weight="3.700439718141092">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="760" target="2564" id="24" weight="5.882643049361842">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="760" target="4476" id="25" weight="8.055282435501189">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="760" target="6930" id="26" weight="3.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="760" target="7394" id="27" weight="6.087462841250339">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="760" target="8734" id="28" weight="4.906890595608519">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="760" target="8805" id="29" weight="5.954196310386875">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="760" target="9393" id="30" weight="3.9068905956085187">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8410" target="2564" id="31" weight="5.044394119358453">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8410" target="6930" id="32" weight="2.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8410" target="7394" id="33" weight="3.700439718141092">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8410" target="8410" id="34" weight="6.321928094887363">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8410" target="8734" id="35" weight="9.715961990255144">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8410" target="9393" id="36" weight="2.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8734" target="2564" id="37" weight="8.20945336562895">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8734" target="4476" id="38" weight="8.870364719583405">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8734" target="6930" id="39" weight="9.54882190845875">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8734" target="7394" id="40" weight="8.417852514885897">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8734" target="8410" id="41" weight="4.906890595608519">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8734" target="8734" id="42" weight="8.159871336778389">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8734" target="8805" id="43" weight="7.507794640198696">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8734" target="8898" id="44" weight="6.066089190457772">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8734" target="9393" id="45" weight="4.523561956057013">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8805" target="7103" id="46" weight="6.700439718141093">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8805" target="horntail" id="47" weight="7.066089190457772">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8898" target="7394" id="48" weight="2.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8898" target="8734" id="49" weight="3.321928094887362">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8898" target="8898" id="50" weight="2.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8898" target="horntail" id="51" weight="6.918863237274595">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="9393" target="4476" id="52" weight="7.392317422778761">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="9393" target="7394" id="53" weight="5.584962500721156">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="9393" target="8410" id="54" weight="4.700439718141093">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="9393" target="8734" id="55" weight="6.870364719583405">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="9393" target="9393" id="56" weight="4.754887502163468">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3" target="535" id="57" weight="5.614709844115208">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3" target="5523" id="58" weight="3.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3" target="6477" id="59" weight="3.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3" target="8586" id="60" weight="5.459431618637297">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3" target="roundup" id="61" weight="4.857980995127572">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3" target="sink and sync" id="62" weight="3.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3147" target="3" id="63" weight="6.409390936137702">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3147" target="5467" id="64" weight="4.700439718141093">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3147" target="6477" id="65" weight="2.807354922057604">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3147" target="8689" id="66" weight="6.087462841250339">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3147" target="MN9" id="67" weight="4.584962500721156">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3147" target="bract" id="68" weight="6.044394119358453">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3147" target="rounddown" id="69" weight="4.169925001442312">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="3147" target="roundup" id="70" weight="4.584962500721156">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="535" target="8445" id="71" weight="6.409390936137702">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="535" target="9036" id="72" weight="4.857980995127572">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="535" target="MN9" id="73" weight="9.283088353024002">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="535" target="rounddown" id="74" weight="7.6865005271832185">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="535" target="roundup" id="75" weight="4.459431618637297">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5523" target="MN9" id="76" weight="10.239598529249124">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6114" target="5467" id="77" weight="7.285402218862249">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6114" target="6114" id="78" weight="3.321928094887362">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6114" target="7272" id="79" weight="4.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6114" target="8586" id="80" weight="4.700439718141093">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6477" target="6477" id="81" weight="4.857980995127572">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6477" target="7922" id="82" weight="8.867278739709661">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7922" target="3" id="83" weight="5.357552004618084">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7922" target="535" id="84" weight="8.027905996569885">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7922" target="6477" id="85" weight="4.0">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7922" target="8445" id="86" weight="8.20945336562895">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7922" target="MN9" id="87" weight="9.661778097771988">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7922" target="rounddown" id="88" weight="5.807354922057604">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7922" target="roundup" id="89" weight="7.011227255423254">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8445" target="5523" id="90" weight="6.321928094887363">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8445" target="8445" id="91" weight="3.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8445" target="8586" id="92" weight="3.321928094887362">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8445" target="MN9" id="93" weight="6.392317422778761">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8445" target="rounddown" id="94" weight="4.392317422778761">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8445" target="roundup" id="95" weight="7.475733430966398">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8586" target="535" id="96" weight="5.643856189774724">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8586" target="5523" id="97" weight="5.523561956057013">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8586" target="8445" id="98" weight="8.442943495848729">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8586" target="9036" id="99" weight="5.700439718141093">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8586" target="MN9" id="100" weight="4.754887502163468">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8586" target="rounddown" id="101" weight="7.700439718141093">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8586" target="roundup" id="102" weight="9.103287808412022">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="9036" target="535" id="103" weight="8.098032082960527">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="9036" target="8445" id="104" weight="2.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="9036" target="8586" id="105" weight="6.459431618637297">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="9036" target="roundup" id="106" weight="5.247927513443585">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="MN9" target="8445" id="107" weight="3.700439718141092">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="bract" target="7272" id="108" weight="5.857980995127572">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="bract" target="8445" id="109" weight="3.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="bract" target="FDG" id="110" weight="4.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="bract" target="roundup" id="111" weight="7.451211111832329">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="bract" target="sink and sync" id="112" weight="4.754887502163468">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="rounddown" target="535" id="113" weight="3.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="rounddown" target="5523" id="114" weight="6.894817763307944">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="rounddown" target="8445" id="115" weight="9.381542951184585">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="rounddown" target="8586" id="116" weight="3.700439718141092">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="rounddown" target="MN9" id="117" weight="8.330916878114618">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="rounddown" target="rounddown" id="118" weight="6.087462841250339">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="rounddown" target="roundup" id="119" weight="3.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="roundup" target="535" id="120" weight="8.43879185257826">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="roundup" target="5523" id="121" weight="5.672425341971495">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="roundup" target="8445" id="122" weight="8.483815777264256">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="roundup" target="8586" id="123" weight="7.826548487290915">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="roundup" target="MN9" id="124" weight="9.813781191217037">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="roundup" target="rounddown" id="125" weight="4.247927513443585">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="roundup" target="roundup" id="126" weight="5.321928094887363">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="5467" id="127" weight="3.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="5523" id="128" weight="3.584962500721156">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="6286" id="129" weight="4.754887502163468">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="7272" id="130" weight="6.20945336562895">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="8445" id="131" weight="7.366322214245816">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="8689" id="132" weight="5.285402218862249">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="9036" id="133" weight="6.392317422778761">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="MN9" id="134" weight="6.044394119358453">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="rounddown" id="135" weight="5.754887502163468">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="roundup" id="136" weight="6.599912842187128">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="sink and sync" target="sink and sync" id="137" weight="3.4594316186372973">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="5467" id="138" weight="4.754887502163468">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="5523" id="139" weight="4.087462841250339">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="6286" id="140" weight="3.321928094887362">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="7014" id="141" weight="3.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="7272" id="142" weight="3.321928094887362">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="8689" id="143" weight="8.321928094887362">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="FDG" id="144" weight="6.3750394313469245">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="bract" id="145" weight="8.682994583681683">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="rounddown" id="146" weight="2.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5467" target="sink and sync" id="147" weight="7.820178962415188">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7014" target="5467" id="148" weight="4.523561956057013">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7014" target="6286" id="149" weight="6.930737337562887">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7014" target="7014" id="150" weight="3.584962500721156">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7014" target="8689" id="151" weight="5.129283016944966">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7014" target="FDG" id="152" weight="6.6293566200796095">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7014" target="bract" id="153" weight="6.599912842187128">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7014" target="sink and sync" id="154" weight="6.321928094887363">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7272" target="5523" id="155" weight="5.426264754702098">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7272" target="7272" id="156" weight="6.066089190457772">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7272" target="8586" id="157" weight="6.022367813028454">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7272" target="8689" id="158" weight="5.906890595608519">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7272" target="9036" id="159" weight="6.965784284662087">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7272" target="roundup" id="160" weight="7.977279923499917">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8689" target="5523" id="161" weight="6.247927513443585">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8689" target="8445" id="162" weight="8.011227255423254">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8689" target="9036" id="163" weight="4.087462841250339">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8689" target="rounddown" id="164" weight="8.124121311829187">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8689" target="roundup" id="165" weight="5.044394119358453">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="8689" target="sink and sync" id="166" weight="3.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="FDG" target="5467" id="167" weight="6.266786540694901">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="FDG" target="6286" id="168" weight="4.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="FDG" target="7272" id="169" weight="7.94251450533924">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="FDG" target="8689" id="170" weight="7.03342300153745">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="FDG" target="9036" id="171" weight="6.507794640198696">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="FDG" target="bract" id="172" weight="5.882643049361842">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="FDG" target="sink and sync" id="173" weight="6.321928094887363">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="3" id="174" weight="3.807354922057604">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="5523" id="175" weight="5.392317422778761">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="6286" id="176" weight="4.392317422778761">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="6477" id="177" weight="3.321928094887362">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="7014" id="178" weight="3.4594316186372973">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="7272" id="179" weight="4.321928094887363">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="8445" id="180" weight="8.321928094887362">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="8586" id="181" weight="4.807354922057604">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="8689" id="182" weight="8.194756854422248">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="9036" id="183" weight="6.339850002884624">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="FDG" id="184" weight="3.700439718141092">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="bract" id="185" weight="8.442943495848729">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="horntail" id="186" weight="3.321928094887362">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="rounddown" id="187" weight="7.768184324776926">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="roundup" id="188" weight="7.971543553950772">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="horntail" target="sink and sync" id="189" weight="5.78135971352466">
+        <viz:color r="255" g="0" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="-1.0" />
+        </attvalues>
+      </edge>
+      <edge source="676" target="7103" id="190" weight="6.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7103" target="535" id="191" weight="3.321928094887362">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7103" target="6477" id="192" weight="8.108524456778168">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7103" target="7922" id="193" weight="8.611024797307353">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="7103" target="horntail" id="194" weight="4.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5342" target="6286" id="195" weight="7.219168520462161">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5342" target="8689" id="196" weight="4.700439718141093">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5342" target="FDG" id="197" weight="4.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="5342" target="sink and sync" id="198" weight="5.459431618637297">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6286" target="5467" id="199" weight="6.339850002884624">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6286" target="7272" id="200" weight="3.0">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6286" target="8586" id="201" weight="2.807354922057604">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6286" target="8689" id="202" weight="4.523561956057013">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6286" target="FDG" id="203" weight="8.467605550082997">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="6286" target="rounddown" id="204" weight="4.247927513443585">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="TPN1" target="5342" id="205" weight="7.400879436282184">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="TPN1" target="6286" id="206" weight="4.321928094887363">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="TPN1" target="7014" id="207" weight="6.022367813028454">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="av1a1" target="4476" id="208" weight="4.523561956057013">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="av1a1" target="603" id="209" weight="7.303780748177103">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="av1a1" target="6930" id="210" weight="6.6865005271832185">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="av1a1" target="760" id="211" weight="5.129283016944966">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="av1a1" target="8410" id="212" weight="4.954196310386875">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="av1a1" target="8734" id="213" weight="7.768184324776926">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="av1a1" target="9393" id="214" weight="5.491853096329675">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="av1a1" target="av1a1" id="215" weight="5.20945336562895">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="atGRN" target="6286" id="216" weight="6.459431618637297">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="atGRN" target="atGRN" id="217" weight="7.7481928495894605">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="DA2_PN" target="DA2_PN" id="218" weight="7.491853096329675">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="DA2_PN" target="Or56a" id="219" weight="4.169925001442312">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="DA2_PN" target="av1a1" id="220" weight="6.149747119504682">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="Or56a" target="DA2_PN" id="221" weight="10.127994320976393">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+      <edge source="Or56a" target="Or56a" id="222" weight="7.266786540694901">
+        <viz:color r="0" g="255" b="0" a="1.0" />
+        <attvalues>
+          <attvalue for="1" value="1.0" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

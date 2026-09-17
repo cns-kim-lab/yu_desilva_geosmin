@@ -57,23 +57,39 @@ def plot_dose_dp_PER(ax,data,cidx=0,alpha=1,linestyle='solid',shape='o',**fig_pa
     ax.spines['right'].set_visible(False)
 
 
-def plot_statistics_result(ax,data_compare):
-    d1,d2 = data_compare
+def plot_statistics_result(ax, data_compare, alternative='greater'):
+    d1, d2 = data_compare
     mean_d1 = d1.values.mean(axis=0)
+
     stat_p_all = []
-    for x,concent in enumerate(d1.columns):
+
+    for x, concent in enumerate(d1.columns):
         d_x = np.asarray(d1[concent])
         d_y = np.asarray(d2[concent])
 
         mask = ~np.isnan(d_x) & ~np.isnan(d_y)
         d_x, d_y = d_x[mask], d_y[mask]
+
         diff = d_x - d_y
         diff = diff[diff != 0]
 
-        stat,p = wilcoxon(diff,alternative='greater',method='auto')
+        stat, p = wilcoxon(
+            diff,
+            alternative=alternative,
+            method='auto'
+        )
+
         ast = pval_to_asterisks(p)
-        ax.text(x,mean_d1[x]+.05,ast, ha='center', va='bottom')
-        stat_p_all.append((stat,p))
+        ax.text(
+            x,
+            mean_d1[x] + .05,
+            ast,
+            ha='center',
+            va='bottom'
+        )
+
+        stat_p_all.append((stat, p))
+
     return stat_p_all
 
 
@@ -320,7 +336,12 @@ def draw_paired_bar_figure(
             v1 = v1[valid]
             v2 = v2[valid]
 
-            stat, pval = wilcoxon(v1, v2, alternative=alternative,method='auto')
+            stat, pval = mannwhitneyu(
+                v1,
+                v2,
+                alternative=alternative,
+                method='auto'
+            )
             stat_all.append((stat,pval))
             x1 = bar_x(cond1, group1)
             x2 = bar_x(cond2, group2)
@@ -360,4 +381,186 @@ def draw_paired_bar_figure(
     if ax.get_legend() is not None:
         ax.get_legend().remove()
 
-    return ax,stat_all
+    if stat_pairs is not None:
+        return ax,stat_all
+    else:
+        return ax 
+
+
+
+def draw_bar_with_points(
+    ax,
+    conditions,
+    groups,
+    get_values,
+    means=None,
+    errs=None,
+    get_mean=None,
+    get_err=None,
+    bar_width=0.15,
+    bar_spacing=0.25,
+    colors=None,
+    edgecolor="black",
+    linewidth=0.5,
+    capsize=2,
+    point_facecolor="white",
+    point_edgecolor="black",
+    point_lw=0.3,
+    point_size=15,
+    point_alpha=0.9,
+    zorder_points=10,
+):
+    """
+    Draw bar plot with raw data points.
+
+    Parameters
+    ----------
+    conditions : list
+        X-axis labels.
+
+    groups : list
+        One or more groups within each condition.
+
+    get_values : callable
+        get_values(cond, group) -> raw values.
+
+    get_mean : callable, optional
+        get_mean(cond, group) -> mean.
+
+    get_err : callable, optional
+        get_err(cond, group) -> error value.
+    """
+
+    n_groups = len(groups)
+
+    if colors is None:
+        default_colors = [
+            "#000000",
+            "#952B7E",
+            "#13739E",
+            "#5E8C61",
+        ]
+        colors = default_colors[:n_groups]
+
+    if len(colors) < n_groups:
+        raise ValueError(
+            "colors의 길이는 groups의 길이 이상이어야 합니다."
+        )
+
+    # 각 condition의 중심
+    x_loc = np.arange(len(conditions)) * bar_spacing
+
+    # 각 group의 bar 중심 offset
+    if n_groups == 1:
+        group_offsets = np.array([0.0])
+    else:
+        group_offsets = (
+            np.arange(n_groups) - (n_groups - 1) / 2
+        ) * bar_width
+
+    # bars
+    for gi, group in enumerate(groups):
+
+        heights = []
+        yerrs = []
+
+        for cond in conditions:
+
+            if get_mean is not None:
+                mean_value = get_mean(cond, group)
+            elif means is not None:
+                if (
+                    cond in means
+                    and isinstance(means[cond], dict)
+                ):
+                    mean_value = means[cond][group]
+                else:
+                    mean_value = means[(cond, group)]
+            else:
+                raise ValueError(
+                    "get_mean 또는 means를 제공해야 합니다."
+                )
+
+            heights.append(mean_value)
+
+            if get_err is not None:
+                err_value = get_err(cond, group)
+            elif errs is None:
+                err_value = 0
+            elif (
+                cond in errs
+                and isinstance(errs[cond], dict)
+            ):
+                err_value = errs[cond][group]
+            else:
+                err_value = errs[(cond, group)]
+
+            yerrs.append(err_value)
+
+        ax.bar(
+            x_loc + group_offsets[gi],
+            heights,
+            yerr=yerrs,
+            width=bar_width,
+            color=colors[gi],
+            edgecolor=edgecolor,
+            linewidth=linewidth,
+            capsize=capsize,
+            label=str(group),
+            zorder=2,
+        )
+
+    # points
+    for i, cond in enumerate(conditions):
+
+        for gi, group in enumerate(groups):
+
+            values = np.asarray(
+                get_values(cond, group),
+                dtype=float
+            )
+            values = values[~np.isnan(values)]
+
+            if len(values) == 0:
+                continue
+
+            # 현재 group 막대의 정확한 중심
+            x_base = x_loc[i] + group_offsets[gi]
+
+            x_jittered = []
+
+            # 같은 y값의 개수 확인
+            v_unique, v_counts = np.unique(
+                values,
+                return_counts=True
+            )
+
+            # 같은 값끼리 막대 폭 안에서 좌우 균등 배치
+            for v, n in zip(v_unique, v_counts):
+
+                step = bar_width / (n + 1)
+
+                for s in range(1, n + 1):
+                    x_jittered.append(
+                        x_base - bar_width / 2 + step * s
+                    )
+
+            # x_jittered의 순서와 일치하도록 y값 재정렬
+            values_resorted = np.concatenate([
+                np.repeat(v, n)
+                for v, n in zip(v_unique, v_counts)
+            ])
+
+            ax.scatter(
+                x_jittered,
+                values_resorted,
+                facecolor=point_facecolor,
+                edgecolor=point_edgecolor,
+                linewidth=point_lw,
+                s=point_size,
+                alpha=point_alpha,
+                zorder=zorder_points,
+                clip_on=True,
+            )
+
+    return x_loc

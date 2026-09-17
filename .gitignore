@@ -6,9 +6,22 @@
 /figure4/figure4D-E.Each_modality_stimulation/simulation/tarsal_result/
 /figure4/figure4D-E.Each_modality_stimulation/plotting/figures/
 /figure4/figure4A.3D_rendering_of_each_type/neurons.pkl
+/figure4/concentration_mapped_simulation/result_atGRN&TPN1
+/figure4/concentration_mapped_simulation/result_L1L2&L3
+/figure8/Enhancement_of_geosmin_associated_inhibition/labial/result
+/figure8/Enhancement_of_geosmin_associated_inhibition/labial/result_control
+/figure8/Enhancement_of_geosmin_associated_inhibition/tarsal/result
+/figure8/Enhancement_of_geosmin_associated_inhibition/tarsal/result_control
+/figure8/Sweet_pathway_redundancy/Simulation/labial/simulation/result
+/figure8/Sweet_pathway_redundancy/Simulation/tarsal/simulation/result
+/figure8/Sweet_pathway_redundancy/Simulation/labial/simulation/rm_edges
+/figure8/Sweet_pathway_redundancy/Simulation/tarsal/simulation/rm_edges
+/figure8/Sweet_pathway_redundancy/Simulation/labial/simulation/data
+/figure8/Sweet_pathway_redundancy/Simulation/tarsal/simulation/data
 /data/
 # Python cache
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 *.~lock.*
+supplementary/figure6/neurons.pkl
