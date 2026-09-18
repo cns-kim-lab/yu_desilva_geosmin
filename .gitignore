@@ -18,6 +18,9 @@
 /figure8/Sweet_pathway_redundancy/Simulation/tarsal/simulation/rm_edges
 /figure8/Sweet_pathway_redundancy/Simulation/labial/simulation/data
 /figure8/Sweet_pathway_redundancy/Simulation/tarsal/simulation/data
+supplementary/figure2/figureS2F.each_leg_simulation/Simulation/result_foreleg
+supplementary/figure2/figureS2F.each_leg_simulation/Simulation/result_mid_hindleg
+supplementary/figure2/figureS2F.each_leg_simulation/Simulation/result_only_TPN1
 /data/
 # Python cache
 __pycache__/
@@ -25,3 +28,4 @@ __pycache__/
 .ipynb_checkpoints/
 *.~lock.*
 supplementary/figure6/neurons.pkl
+supplementary/figure6/3D_renderings/neurons.pkl

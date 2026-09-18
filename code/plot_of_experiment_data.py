@@ -502,7 +502,7 @@ def draw_bar_with_points(
             heights,
             yerr=yerrs,
             width=bar_width,
-            color=colors[gi],
+            color=colors,
             edgecolor=edgecolor,
             linewidth=linewidth,
             capsize=capsize,
