@@ -21,6 +21,8 @@
 supplementary/figure2/figureS2F.each_leg_simulation/Simulation/result_foreleg
 supplementary/figure2/figureS2F.each_leg_simulation/Simulation/result_mid_hindleg
 supplementary/figure2/figureS2F.each_leg_simulation/Simulation/result_only_TPN1
+figure2/figure2J_NBLAST_LM_to_TPN1_candi/data/skeleton_L.nrrd
+figure2/figure2J_NBLAST_LM_to_TPN1_candi/data/skeleton_R.nrrd
 /data/
 # Python cache
 __pycache__/

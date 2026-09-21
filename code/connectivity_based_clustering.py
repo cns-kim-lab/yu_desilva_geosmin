@@ -17,7 +17,7 @@ from color_utils import rgb_to_hex
 import sys 
 import os 
 from pathlib import Path
-REPO_ROOT = Path.cwd().resolve().parents[1]
+REPO_ROOT = Path(__file__).resolve().parents[1]
 path_syn = REPO_ROOT/"data/synapse/v783"
 path_comp = REPO_ROOT/"data/Completeness_783.csv"
 with open(REPO_ROOT/"data/interneuron_group_info/target_ids_all_v783.pkl",'rb') as f:
@@ -29,6 +29,7 @@ fid2g = dict(zip(list(target_ids_valid_all),list(g_info_all)))
 
 
 def make_adjacency_matrix_GRN_to_2ndtype(interest_grns):
+    path_syn = '/volume_4/research/seongbong/flywire/GRN_project_new/data/synapse_v783'
     second = []
     for c in interest_grns:
         c_df = pd.read_csv(f'{path_syn}/{c}.csv')

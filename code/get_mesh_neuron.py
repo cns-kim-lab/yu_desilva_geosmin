@@ -5,9 +5,9 @@ import numpy as np
 from fafbseg import flywire
 import pickle 
 
-def read_pickle(flyid,what):
-    path = '/volume_4/research/seongbong/flywire/geosmin_project_version_update/data'
-    path = f'{path}/{what}'
+def read_pickle(flyid,what,path):
+    # path = '/volume_4/research/seongbong/flywire/geosmin_project_version_update/data'
+    # path = f'{path}/{what}'
     with open(f'{path}/{flyid}.pkl','rb') as f:
         data = pickle.load(f)
     return data
@@ -32,11 +32,12 @@ def get_mesh_from_server(flyid):
 
 
 def load_mesh(flyid):
-    mlist = os.listdir('/volume_4/research/seongbong/flywire/geosmin_project_version_update/data/mesh')
+    path = '/volume_4/research/seongbong/flywire/geosmin_project_version_update/data/mesh'
+    mlist = os.listdir(path)
     mlist = [int(x[:-4]) for x in mlist]
     if flyid in mlist:
         # print(flyid)
-        m = read_pickle(flyid,'mesh')
+        m = read_pickle(flyid,'mesh',path)
     else:
         m = get_mesh_from_server(flyid)
     return m 
@@ -58,17 +59,19 @@ def get_dps_from_server(mesh):
 
 
 def load_dps(mesh):
-    dpslist = os.listdir('/volume_3/research/seongbong/flywire/data/dps')
+    path = '/volume_3/research/seongbong/flywire/data/dps'
+    dpslist = os.listdir(path)
     dpslist = [int(x[:-4]) for x in dpslist]
     if mesh.id in dpslist:
-        dps2018 = read_pickle(mesh.id,'dps')
+        dps2018 = read_pickle(mesh.id,'dps',path)
     else:
         dps2018 = get_dps_from_server(mesh)
     return dps2018
 
 
 def get_dps_mir_from_server(dps):
-    dpsmirlist = os.listdir('/volume_3/research/seongbong/flywire/data/dps_mirr')
+    path = '/volume_3/research/seongbong/flywire/data/dps_mirr'
+    dpsmirlist = os.listdir(path)
     dpsmirlist = [int(x[:-4]) for x in dpsmirlist]
     if dps.id not in dpsmirlist:
         try:
@@ -81,10 +84,11 @@ def get_dps_mir_from_server(dps):
             return dps_mir    
         
 def load_dps_mir(dps):
-    dpsmirlist = os.listdir('/volume_3/research/seongbong/flywire/data/dps_mirr')
+    path = '/volume_3/research/seongbong/flywire/data/dps_mirr'
+    dpsmirlist = os.listdir(path)
     dpsmirlist = [int(x[:-4]) for x in dpsmirlist]
     if dps.id in dpsmirlist:
-        dps_mir = read_pickle(dps.id,'dps_mirr')
+        dps_mir = read_pickle(dps.id,'dps_mirr',path)
     else:
         dps_mir = get_dps_mir_from_server(dps)
     return dps_mir
