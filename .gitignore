@@ -24,6 +24,9 @@ supplementary/figure2/figureS2F.each_leg_simulation/Simulation/result_only_TPN1
 figure2/figure2J_NBLAST_LM_to_TPN1_candi/data/skeleton_L.nrrd
 figure2/figure2J_NBLAST_LM_to_TPN1_candi/data/skeleton_R.nrrd
 /data/
+/private
+# 
+*.svg
 # Python cache
 __pycache__/
 *.pyc

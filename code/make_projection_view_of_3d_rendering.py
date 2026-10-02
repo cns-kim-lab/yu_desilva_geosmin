@@ -103,7 +103,8 @@ def make_projection_image(
     projection_view='xy',
     backoff=700,
     parallelsacle=70000,
-    do_save=True
+    do_save=True,
+    **custom
 ):
 
     if projection_view == 'xy':
@@ -118,6 +119,15 @@ def make_projection_image(
         backoff_vector = [0, -1, 0]
         up_vector = [0, 0, -1]
 
+    elif projection_view == 'custom':
+        backoff_vector = custom['backoff_vector']
+        up_vector = custom['up_vector']
+
+    else:
+        raise ValueError(
+            f"Unknown projection_view: {projection_view}"
+        )
+
     camera = trimesh_vtk.oriented_camera(
         center=center,
         backoff=backoff,
@@ -131,11 +141,16 @@ def make_projection_image(
     actors_to_render = list(actors_list)
 
     if scalebar:
-        length = scalebar_um * 1000  # um -> nm
-        pos = np.asarray(center) + np.asarray(scalebar_offset)
+
+        length = scalebar_um * 1000
+
+        pos = (
+            np.asarray(center)
+            + np.asarray(scalebar_offset)
+        )
 
         if projection_view == 'xy':
-            # screen horizontal = x
+
             spec = [
                 length,
                 scalebar_thickness,
@@ -143,7 +158,7 @@ def make_projection_image(
             ]
 
         elif projection_view == 'yz':
-            # screen horizontal = z
+
             spec = [
                 scalebar_thickness,
                 scalebar_thickness,
@@ -151,12 +166,24 @@ def make_projection_image(
             ]
 
         elif projection_view == 'xz':
-            # screen horizontal = x
+
             spec = [
                 length,
                 scalebar_thickness,
                 scalebar_thickness
             ]
+
+        elif projection_view == 'custom':
+
+            # Custom view에서는 scalebar를 별도로 설정
+            spec = custom.get(
+                'scalebar_spec',
+                [
+                    length,
+                    scalebar_thickness,
+                    scalebar_thickness
+                ]
+            )
 
         scalebar_actor = create_scalebar_at_wanted_pos(
             pos=pos,
@@ -165,16 +192,9 @@ def make_projection_image(
 
         actors_to_render.append(scalebar_actor)
 
-    if do_save:
-        trimesh_vtk.render_actors(
-            actors_to_render,
-            camera=camera,
-            do_save=True,
-            filename=f'{save_path}.png'
-        )
-    else:
-        trimesh_vtk.render_actors(
-            actors_to_render,
-            camera=camera,
-            do_save=False
-        )
+    trimesh_vtk.render_actors(
+        actors_to_render,
+        camera=camera,
+        do_save=do_save,
+        **({'filename': f'{save_path}.png'} if do_save else {})
+    )
